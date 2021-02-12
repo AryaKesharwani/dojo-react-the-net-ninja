@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// root component's
+import NavBar from './NavBar'
+import Home from './Home'
+//  https://github.com/iamshaunjp/Complete-React-Tutorial/tree/lesson-11/dojo-blog/src
 
 function App() {
+  // const title="Welcome to the new blog"
+  // const likes=60
+  // const link="http://www.google.com"
+  
+  // error
+  // const person={name:'arya',age:60}
+  // true or false
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <NavBar/>
+      <div className="content">
+        <Home/>
+      </div>
     </div>
   );
 }
 
 export default App;
+
+
+/* <h1>{title}</h1>
+<p>Liked {likes} times</p>
+<p>{50}</p>
+<p>{"hello world "}</p>
+<p>{[1,2,3,,4,5]}</p>
+<p>{Math.random()*100}</p>
+<a href={link}>Google site</a> */
